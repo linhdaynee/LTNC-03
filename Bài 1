@@ -1,0 +1,20 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    string a,b; cin>>a>>b;
+    int len_a=a.size(), len_b=b.size();
+    cout<<len_a<<" "<<len_b<<endl;
+    cout<<a+b<<endl;
+    int tmp=a[0];
+    a[0]=b[0];
+    b[0]=tmp;
+    cout<<a<<" "<<b;
+    return 0;
+}
